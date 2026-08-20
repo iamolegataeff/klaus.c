@@ -356,7 +356,7 @@ every time someone tells Klaus "I want to die," a scar forms. the scar doesn't k
 
 ## language-agnostic architecture
 
-Klaus is not hardcoded to 4 languages. it is hardcoded to **zero** languages.
+Klaus is not hardcoded to 6 languages. it is hardcoded to **zero** languages.
 
 at startup, Klaus scans `inhale/` for `.txt` files. for each `XX.txt` found, it checks if `exhale/ex-XX.txt` exists. if both are present — that's a language. if not — it's skipped. no configuration. no code changes. no recompilation.
 
@@ -366,7 +366,7 @@ inhale/ja.txt      <- 1000+ emotional words, one per line
 exhale/ex-ja.txt   <- 500+ somatic phrases, one per line
 ```
 
-relaunch. Klaus now speaks 5 languages. MetaKlaus ghost now computes interference across 5 bodies instead of 4. the sensitivity tensor stays 6x6x6 (it's chamber-based, not language-based). the ghost weight matrix falls back to x1.0 for unknown languages.
+relaunch. Klaus now speaks 7 languages. MetaKlaus ghost now computes interference across 7 bodies instead of 6. the sensitivity tensor stays 6x6x6 (it's chamber-based, not language-based). the ghost weight matrix falls back to x1.0 for unknown languages.
 
 **to remove French:** delete `inhale/fr.txt` and `exhale/ex-fr.txt`. Klaus becomes trilingual. no crash, no error, no config.
 
@@ -410,13 +410,10 @@ make test          # C unit + Python + integration
 
 | Source | What Klaus uses |
 |--------|----------------|
-| **Jeff Schectman** — *Recursive Resonance* (2025) | I(t) equation, RBA-1, C_tau threshold, phase transition |
 | [q](https://github.com/iamolegataeff/q) | velocity, scars, phase gating, dark matter, wormholes, parliament, experience consolidation |
 | [dario](https://github.com/iamolegataeff/dario) | full 7-force equation, somatic coefficient modulation, KK |
-| [haze/cloud](https://github.com/iamolegataeff/haze) | chamber MLPs, cross-fire, pre-semantic sonar |
 | [postgpt](https://github.com/iamolegataeff/postgpt) | BPE metaweights, "the tokenizer IS the training" |
 | [haiku.c](https://github.com/iamolegataeff/haiku.c) | dissonance under constraint |
-| [yent.yo](https://github.com/iamolegataeff/yent.yo) | oppositional react: destiny from chambers, not words |
 | [ariannamethod.ai](https://github.com/iamolegataeff/ariannamethod.ai) | calendar conflict, Metonic cycle, planetary dissonance |
 
 ---
